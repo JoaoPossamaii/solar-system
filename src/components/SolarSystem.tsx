@@ -7,7 +7,7 @@ import planets from '../data/planets';
 
 function SolarSystem() {
   return (
-    <div>
+    <div className="solar-system">
       < Title
         headline={"Planetas"} />
 

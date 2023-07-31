@@ -3,6 +3,10 @@ import SolarSystem from './components/SolarSystem';
 import Missions from './components/Missions';
 
 
+import './App.css';
+import './reset.style.css'
+
+
 function App() {
   return (
     <>

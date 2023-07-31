@@ -1,0 +1,145 @@
+body {
+  background: url('./images/background.png') no-repeat center center fixed;
+  background-size: 100%;
+  color: #fafafa;
+  font-family: Roboto, sans-serif;
+}
+
+body>div {
+  margin: 0 auto;
+  max-width: 1900px;
+}
+
+h1 {
+  padding: 48px 60px;
+}
+
+.solar-system {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 134px);
+}
+
+h2 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size:50px ;
+}
+
+.solar-system ul {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  margin: auto 0;
+  max-width: 100%;
+  position: relative;
+}
+
+@keyframes planet {
+
+  0% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.solar-system ul li {
+  align-items: center;
+  animation: planet 2s ease-in-out alternate-reverse infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 999;
+}
+
+li:nth-child(1) img {
+  width: 51px;
+}
+
+li:nth-child(2) img {
+  width: 102px;
+}
+
+li:nth-child(3) img {
+  width: 106px;
+}
+
+li:nth-child(4) img {
+  width: 186px;
+}
+
+li:nth-child(5) img {
+  width: 272px;
+}
+
+li:nth-child(6) img {
+  width: 280px;
+}
+
+li:nth-child(7) img {
+  width: 144px;
+}
+
+li:nth-child(8) img {
+  width: 144px;
+}
+
+.solar-system li p {
+  text-align: center;
+}
+
+.missions {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.missions ul {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  list-style: none;
+  margin-top: 48px;
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+.missions ul li {
+  background-color: black;
+  border-radius: 5px;
+  max-width: 450px;
+  padding: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.missions ul li:after {
+  background-color: #fafafa;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.mission-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.mission-card strong {
+  text-transform: uppercase;
+}
+
+.data-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}

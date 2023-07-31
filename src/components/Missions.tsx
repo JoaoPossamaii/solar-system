@@ -6,7 +6,7 @@ import missions from '../data/missions';
 
 function Missions() {
   return (
-    <div>
+    <div className='missions'>
       < Title
         headline={"Missões"} />
 

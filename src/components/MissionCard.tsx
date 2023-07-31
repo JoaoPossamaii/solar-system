@@ -14,10 +14,10 @@ function MissionCard({
 
 
   return (
-    <div>
+    <div className="mission-card">
       <strong>{name}</strong>
 
-      <div>
+      <div className="data-wrapper">
         <p>{year}</p>
         <p>{country}</p>
         <p>{destination}</p>
